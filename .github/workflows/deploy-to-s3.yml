@@ -1,0 +1,29 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 푸시될 때마다 실행
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # 워크플로우가 실행될 환경 (Ubuntu)
+
+    steps:
+      # 체크아웃 리포지토리
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # AWS 자격 증명 설정
+      - name: Set up AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}  # GitHub Secrets에서 AWS_ACCESS_KEY_ID 불러오기
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  # GitHub Secrets에서 AWS_SECRET_ACCESS_KEY 불러오기
+          aws-region: ${{ secrets.AWS_REGION }}  # GitHub Secrets에서 AWS_REGION 불러오기
+
+      # S3에 파일 업로드
+      - name: Upload files to S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/my-file.txt --region ${{ secrets.AWS_REGION }} --delete
+          

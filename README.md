@@ -6,7 +6,8 @@ React는 HTML, CSS, JavaScript를 기반으로 동작하는 라이브러리입�
 따라서 HTML과 CSS의 기초를 탄탄히 다지고 기본적인 사용법을 익히는 것은 React 활용에 큰 도움이 됩니다.
 
 React를 학습하기 전, 정적인 웹 페이지로 이력서를 작성해 HTML과 CSS의 기초를 익히기 위해 구현된 프로젝트입니다.
-이력서 완성한 후, Github Action을 통해 AWS S3에 배포합니다.
+
+이력서 완성 후, Github Action을 통해 AWS S3에 배포합니다.
 
 
 ## 사용 기술

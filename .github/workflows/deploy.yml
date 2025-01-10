@@ -25,5 +25,5 @@ jobs:
       # S3에 파일 업로드
       - name: Upload files to S3
         run: |
-          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }}/my-file.txt --region ${{ secrets.AWS_REGION }} --delete
+          aws s3 sync ./public s3://${{ secrets.AWS_S3_BUCKET }} --region ${{ secrets.AWS_REGION }} --acl public-read
           

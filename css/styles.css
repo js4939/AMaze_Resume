@@ -239,21 +239,21 @@
       background: rgb(204, 204, 204);
       width: 21cm;
       height: 29.7cm;
-      margin: 0 0 0 auto;     /* 왼쪽 여백 0으로 지정 */
+      margin: 0 auto;
       overflow: scroll;
     }
     
     page {
       background: white;
       display: block;
-      margin: 0 auto;
+      margin: 0 0 0 auto;     /* 왼쪽 여백 0으로 지정 */
       margin-bottom: 0.5cm;
       position: relative
     }
 
     page[size="A4"] {
-      width: 460px;
-      height: 640px;
+      width: 440px;
+      height: 680px;
     }
 
     /* 구간 나누어 디자인 */

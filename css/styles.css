@@ -236,7 +236,6 @@ body {
   /* 반응형으로 수정 */
   @media (max-width: 480px) {
     body {
-      font-size: 14px; /* 글씨 크기 줄이기 */
       background-color: blue; /* 배경색 변경 */
     }
   }

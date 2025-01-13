@@ -234,7 +234,7 @@ body {
   }
 
   /* 반응형으로 수정 */
-  @media (max-width: 480px) {
+  @media (max-width: 12cm) {
     body {
       background: rgb(204, 204, 204);
       width: 480px;

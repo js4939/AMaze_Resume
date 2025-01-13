@@ -234,12 +234,12 @@
   }
 
   /* 반응형으로 수정 */
-  @media (max-width: 1000px) {
+  @media (max-width: 500px) {
     body {
       background: rgb(204, 204, 204);
       width: 21cm;
       height: 29.7cm;
-      margin: 0 auto;
+      margin: 0 0 0 auto;     /* 왼쪽 여백 0으로 지정 */
       overflow: scroll;
     }
     
@@ -252,8 +252,8 @@
     }
 
     page[size="A4"] {
-      width: 480px;
-      height: 840px;
+      width: 460px;
+      height: 640px;
     }
 
     /* 구간 나누어 디자인 */

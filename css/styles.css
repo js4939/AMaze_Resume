@@ -234,9 +234,9 @@ body {
   }
 
   /* 반응형으로 수정 */
-  @media (max-width: 15cm) {
+  @media (min-width: 5cm) and (max-width: 12cm) {
     body {
-      width: auto;
-      width: auto;
+      width: 10cm;
+      width: 10cm;
     }
   }

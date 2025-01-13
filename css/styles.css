@@ -234,7 +234,7 @@
   }
 
   /* 반응형으로 수정 */
-  @media (max-width: 1000px) {   /* 올릴 때 500px로 수정 */
+  @media (max-width: 500px) {   /* 올릴 때 500px로 수정 */
     body {
       background: rgb(204, 204, 204);
       width: 21cm;

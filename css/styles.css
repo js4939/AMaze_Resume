@@ -234,7 +234,7 @@
   }
 
   /* 반응형으로 수정 */
-  @media (max-width: 500px) {
+  @media (max-width: 500px) {   /* 올릴 때 500px로 수정 */
     body {
       background: rgb(204, 204, 204);
       width: 21cm;
@@ -246,7 +246,7 @@
     page {
       background: white;
       display: block;
-      margin: 0 auto 0 0;     /* 왼쪽 여백 0으로 지정 */
+      margin: 0 auto 0 5px;     /* 왼쪽 여백 0으로 지정 */
       margin-bottom: 0.5cm;
       position: relative
     }
@@ -286,33 +286,33 @@
     /* 증명 사진 */
     #profile-img {
       /* 이미지 크기 조절 */
-      width: 19%;
+      width: 20%;
       height: 16%;
       /* 이미지 절대 위치 조절 */
       position: absolute;
-      top: 8%;
+      top: 7%;
       left: 9%;
     }
 
     /* left 가로 구분선 */
     #left-hr {
-      width: 80%;
+      width: 88%;
       color: #CCCCCC;
       /* 위 요소 기준으로 구분선 상대 위치 조절 */
       position: relative;
-      top: 22%;
+      top: 22.5%;
     }
 
     /* 각 항목의 제목 스타일 지정 */
     #left-title {
       font-weight: bold;
       position: relative;
-      top: 180px;
-      left: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      top: 150px;
+      left: 11px;
+      margin-top: 15px;
+      margin-bottom: 10px;
       font-family: 'Montserrat-Light';
-      font-size: 16px;
+      font-size: 14px;
     }
 
     /* Contacts 항목 디자인 */
@@ -324,29 +324,29 @@
 
     .contacts li {
       position: relative;
-      top: 175px;
-      left: 10px;
-      margin-bottom: 10px;
+      top: 155px;
+      left: 11px;
+      margin-bottom: 12px;
       font-family: 'Montserrat-Light';
       display: flex; /* 아이콘과 텍스트를 나란히 배치 */
       align-items: center;
-      font-size: 12px;
+      font-size: 10px;
     }
 
     /* 아이콘 이미지 */
     .contacts img{
-      width: 15px;
-      margin-right: 8px;
+      width: 10px;
+      margin-right: 5px;
     }
 
     /* Skills 항목 디자인 */
     .skills li {
       position: relative;
-      top: 175px;
-      left: 0px;
-      margin-bottom: 10px;
+      top: 150px;
+      left: -12px;
+      margin-bottom: 7px;
       font-family: 'Montserrat-Light';
-      font-size: 12px;
+      font-size: 10px;
     }
 
     /* Education 항목 디자인 */
@@ -358,11 +358,11 @@
 
     .education li {
       position: relative;
-      top: 175px;
-      left: 25px;
+      top: 155px;
+      left: 13px;
       margin-bottom: 12px;
       font-family: 'Montserrat-Light';
-      font-size: 12px;
+      font-size: 10px;
     }
 
     /* Portfolio 항목 디자인 */
@@ -374,18 +374,18 @@
 
     .portfolio li {
       position: relative;
-      top: 175px;
-      left: 25px;
+      top: 155px;
+      left: 13px;
       margin-bottom: 15px;
       font-family: 'Montserrat-Light';
       display: flex; /* 아이콘과 텍스트를 나란히 배치 */
       align-items: center;
-      font-size: 12px;
+      font-size: 10px;
     }
 
     /* 아이콘 이미지 */
     .portfolio img{
-      width: 15px;
-      margin-right: 10px;
+      width: 13px;
+      margin-right: 13px;
     }
 }

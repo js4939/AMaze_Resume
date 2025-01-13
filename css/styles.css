@@ -30,6 +30,7 @@ body {
     font-weight: 500;
   }
 
+
   /* 구간 나누어 디자인 */
   .top {
     display: flex;
@@ -230,4 +231,12 @@ body {
     font-family: 'Pretendard-Regular';
     font-size: 17px;
     line-height: 28px;
+  }
+
+  /* 반응형으로 수정 */
+  @media (max-width: 15cm) {
+    body {
+      width: auto;
+      width: auto;
+    }
   }

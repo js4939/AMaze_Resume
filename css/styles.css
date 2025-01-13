@@ -234,9 +234,9 @@ body {
   }
 
   /* 반응형으로 수정 */
-  @media (min-width: 5cm) and (max-width: 12cm) {
+  @media (max-width: 480px) {
     body {
-      width: 10cm;
-      width: 10cm;
+      font-size: 14px; /* 글씨 크기 줄이기 */
+      background-color: blue; /* 배경색 변경 */
     }
   }

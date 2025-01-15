@@ -1,0 +1,29 @@
+# Node.js 관련
+node_modules/
+npm-debug.log
+yarn-error.log
+*.log
+
+# 빌드 출력 디렉토리
+build/
+dist/
+
+# 테스트 및 커버리지
+coverage/
+
+# 환경 변수 및 개인 키
+.env
+*.pem
+*.key
+
+# IDE/Editor
+.vscode/
+.idea/
+*.iml
+
+# macOS와 Windows 시스템 파일
+.DS_Store
+Thumbs.db
+
+# Git 파일
+.git/
